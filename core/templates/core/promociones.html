@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+
+<main class="contenedor">
+  <div class="promociones-container">
+    <h3 class="titulo">Promociones</h3>
+    <h2 class="subtitulo">
+      <span>¡No te pierdas nuestras increíbles promociones!</span>
+    </h2>
+    <div class="promocion">
+      <div class="imagen-ampliable">
+        <img
+          src="{% static 'core/img/products/promo01.png' %}"
+          alt="Promoción 1"
+        />
+      </div>
+      <h4>Promoción de verano</h4>
+      <p>
+        Descuento del 20% en todas las joyas de verano. ¡Aprovecha esta oferta
+        especial para lucir radiante!
+      </p>
+    </div>
+
+    <div class="promocion">
+      <div class="imagen-ampliable">
+        <img
+          src="{% static 'core/img/products/promo02.png' %}"
+          alt="Promoción 2"
+        />
+      </div>
+      <h4>Oferta de aniversario</h4>
+      <p>
+        Celebramos nuestro aniversario con un 15% de descuento en todas las
+        piezas de colección. ¡Ven y festeja con nosotros!
+      </p>
+    </div>
+    <div class="promocion">
+      <div class="imagen-ampliable">
+        <img
+          src="{% static 'core/img/products/promo03.png' %}"
+          alt="Promoción 3"
+        />
+      </div>
+      <h4>Promoción de verano</h4>
+      <p>
+        Descuento del 20% en todas las joyas de verano. ¡Aprovecha esta oferta
+        especial para lucir radiante!
+      </p>
+    </div>
+
+    <div class="promocion">
+      <div class="imagen-ampliable">
+        <img
+          src="{% static 'core/img/products/promo04.png' %}"
+          alt="Promoción 4"
+        />
+      </div>
+      <h4>Oferta de aniversario</h4>
+      <p>
+        Celebramos nuestro aniversario con un 15% de descuento en todas las
+        piezas de colección. ¡Ven y festeja con nosotros!
+      </p>
+    </div>
+  </div>
+
+  <div class="separador text-center text-white">
+    <p>
+      <q
+        >Cada cuenta con tres meses de garantia, Brindandote siempre la mejor
+        calidad.</q
+      >
+    </p>
+  </div>
+</main>
+
+{% endblock %}
