@@ -15,7 +15,28 @@
       </div>
     </div>
   </div>
+
   <div class="catalogo-container">
+    <h3 class="titulo">Te presentamos nuestro Catálogo de Productos</h3>
+    <div class="catalogo-grid">
+      {% for producto in productos %}
+        <div class="producto">
+          <div class="imagen-ampliable">
+            <img src="{{ producto.image.url }}" alt="{{ producto.title }}" />
+          </div>
+          <h4>{{ producto.title }}</h4>
+          <p>{{ producto.description }}</p>
+          <p>Código: {{ producto.code }}</p>
+          <p>Precio: ${{ producto.price }}</p>
+          <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+  <!--div class="catalogo-container">
     <h3 class="titulo">Te presentamos nuestro Catálogo de Productos</h3>
     <div class="catalogo-grid">
       <div class="producto">
@@ -145,10 +166,7 @@
       </div>
     </div>
 
-    <h3 class="titulo">
-      Descubri tambien nuestro Catalogo de Collares y Dijes
-    </h3>
-    <div class="catalogo-grid">
+    <div-- class="catalogo-grid">
       <div class="producto">
         <div class="imagen-ampliable">
           <img
@@ -274,8 +292,8 @@
         <p>Precio: $90000.00</p>
         <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
       </div>
-    </div>
-  </div>
+    </div-->
+  </!--div-->
 
   <div class="separador text-center text-white">
     <p>
