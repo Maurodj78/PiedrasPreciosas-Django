@@ -140,6 +140,7 @@ form {
 }
 
 .contenedor {
+    background-color: rgb(230, 248, 230);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
